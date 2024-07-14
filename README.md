@@ -1,0 +1,32 @@
+# Projeto de Exemplo Spring Boot
+
+Este é um projeto de exemplo usando Spring Boot para demonstrar o cadastro de beneficiarios em um plano de saude.
+
+## Tecnologias Utilizadas
+
+- Java 11
+- Spring Boot 2.5.6
+
+## Pré-requisitos
+
+- JDK 11 ou superior
+
+## Configuração do Ambiente
+
+Clone o repositório e configure as variáveis de ambiente necessárias para conexão com o banco de dados.
+
+## Instalação
+
+1. Clone o repositório: `git clone https://github.com/seu-usuario/projeto-exemplo.git`
+2. Entre no diretório do projeto: `cd projeto-exemplo`
+3. Execute a aplicação: `mvn spring-boot:run`
+
+## Uso
+
+Acesse a API através de `http://localhost:8080/api` para ver os endpoints disponíveis.
+
+## Contato
+
+- Ariel Batista
+- Email: arielbatitsa853@email.com
+- LinkedIn: linkedin.com/joaodasilva

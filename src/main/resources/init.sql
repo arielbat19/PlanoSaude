@@ -1,0 +1,18 @@
+CREATE TABLE Beneficiario (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(15),
+    dataNascimento DATE,
+    dataInclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dataAtualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Documento (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    tipoDocumento VARCHAR(50) NOT NULL,
+    descricao TEXT,
+    dataInclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dataAtualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    beneficiario_id INT,
+    FOREIGN KEY (beneficiario_id) REFERENCES Beneficiario(id)
+);
