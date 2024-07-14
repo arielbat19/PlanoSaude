@@ -17,13 +17,13 @@ Clone o repositório e configure as variáveis de ambiente necessárias para con
 
 ## Instalação
 
-1. Clone o repositório: `git clone https://github.com/seu-usuario/projeto-exemplo.git`
-2. Entre no diretório do projeto: `cd projeto-exemplo`
+1. Clone o repositório: `git clone https://github.com/arielbat19/PlanoSaude.git`
+2. Entre no diretório do projeto: `cd PlanoSaude`
 3. Execute a aplicação: `mvn spring-boot:run`
 
 ## Uso
 
-Acesse a API através de `http://localhost:8080/api` para ver os endpoints disponíveis.
+Acesse a API através de `http://localhost:8080/swagger-ui/` para ver os endpoints disponíveis.
 
 ## Contato
 
