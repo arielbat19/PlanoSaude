@@ -29,4 +29,4 @@ Acesse a API através de `http://localhost:8080/swagger-ui/` para ver os endpoin
 
 - Ariel Batista
 - Email: arielbatitsa853@email.com
-- LinkedIn: linkedin.com/joaodasilva
+- LinkedIn: www.linkedin.com/in/ariel-batista-ba4000190
