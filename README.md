@@ -23,7 +23,8 @@ Clone o repositório e configure as variáveis de ambiente necessárias para con
 
 ## Uso
 
-Acesse a API através de `http://localhost:8080/api/v1/planoSaude` gere o token para acesso aos endpoints disponíveis.
+Acesse a API através de `http://localhost:8080/login` gere o token para acesso aos endpoints disponíveis
+em `http://localhost:8080/api/v1/planoSaude`
 Usuario: admin
 Senha: password
 
