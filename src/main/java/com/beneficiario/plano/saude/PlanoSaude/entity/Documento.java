@@ -23,14 +23,14 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "documento")
 public class Documento {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(nullable = false, length = 50)
+	@Column(nullable = true, length = 50)
 	private String tipoDocumento;
 
 	@Lob
@@ -93,5 +93,5 @@ public class Documento {
 	public void setBeneficiario(Beneficiario beneficiario) {
 		this.beneficiario = beneficiario;
 	}
-	
+
 }

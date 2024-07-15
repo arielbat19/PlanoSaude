@@ -1,18 +1,15 @@
-CREATE TABLE Beneficiario (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100) NOT NULL,
-    telefone VARCHAR(15),
-    dataNascimento DATE,
-    dataInclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    dataAtualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+
+-- Criação da tabela de usuários
+CREATE TABLE IF NOT EXISTS usuarios (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE Documento (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    tipoDocumento VARCHAR(50) NOT NULL,
-    descricao TEXT,
-    dataInclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    dataAtualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    beneficiario_id INT,
-    FOREIGN KEY (beneficiario_id) REFERENCES Beneficiario(id)
-);
+INSERT INTO usuarios (login, password, role) VALUES
+('admin', '$2a$10$bCxJyUo7wp.aAfY1RoRFReaMkhbYOduAK948f4rTTTivXG47QrhSa', 'ADMIN'); -- password: "password"
+
+
+
