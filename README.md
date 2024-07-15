@@ -23,7 +23,9 @@ Clone o repositório e configure as variáveis de ambiente necessárias para con
 
 ## Uso
 
-Acesse a API através de `http://localhost:8080/swagger-ui/` para ver os endpoints disponíveis.
+Acesse a API através de `http://localhost:8080/api/v1/planoSaude` gere o token para acesso aos endpoints disponíveis.
+Usuario: admin
+Senha: password
 
 ## Contato
 
